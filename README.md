@@ -4,43 +4,8 @@ This directory contains the dotfiles for my system
 
 ## Requirements
 
-Ensure you have the following installed on your system
+Ensure you have [Homebrew](https://brew.sh) installed on your system
 
-### Git
-
-```
-brew install git
-```
-
-### Stow
-
-```
-brew install stow
-```
-
-### WezTerm
-
-```
-brew install --cask wezterm
-```
-
-### Nerd Font
-
-```
-brew install font-jetbrains-mono-nerd-font
-```
-
-### Zoxide
-
-```
-brew install zoxide
-```
-
-### Eza
-
-```
-brew install eza
-```
 
 ## Installation
 
@@ -55,5 +20,11 @@ then use GNU stow to create symlinks
 
 ```
 $ stow .
+```
+
+finally, install all required packages specified in the Brewfile
+
+```
+brew bundle
 ```
 
