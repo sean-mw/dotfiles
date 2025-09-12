@@ -16,15 +16,17 @@ $ git clone git@github.com:sean-mw/dotfiles.git
 $ cd dotfiles
 ```
 
-then use GNU stow to create symlinks
+then install all required packages specified in the Brewfile
+
+```
+brew bundle
+```
+
+finally, use GNU stow to create symlinks
 
 ```
 $ stow .
 ```
 
-finally, install all required packages specified in the Brewfile
 
-```
-brew bundle
-```
 
