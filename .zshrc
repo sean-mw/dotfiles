@@ -53,11 +53,14 @@ setopt hist_find_no_dups
 # Allow autocomplete to be insensitive
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
+# Default Editor
+export EDITOR='nvim'
+
 # Aliases
 alias ls='eza --icons=always'
 alias vi='nvim'
 alias vim='nvim'
+alias mux='tmuxinator'
 
 # Shell integrations
 eval "$(zoxide init --cmd cd zsh)"
-
