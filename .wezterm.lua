@@ -13,4 +13,8 @@ config.color_scheme = "Catppuccin Mocha"
 
 config.window_close_confirmation = "NeverPrompt"
 
+config.keys = {
+  { key = "Enter", mods = "SHIFT", action = wezterm.action({ SendString = "\x1b\r" }) },
+}
+
 return config
