@@ -64,3 +64,8 @@ alias mux='tmuxinator'
 
 # Shell integrations
 eval "$(zoxide init --cmd cd zsh)"
+
+# Source personal/work overrides if present
+if [ -f "$HOME/.zshrc.local" ]; then
+  source "$HOME/.zshrc.local"
+fi
