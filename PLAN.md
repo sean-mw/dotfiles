@@ -20,7 +20,8 @@ dotfiles/
 ├── wezterm/.wezterm.lua
 ├── (later) bootstrap.sh
 ├── (later) claude/plugins
-└── (later) claude/.claude/{CLAUDE.md,skills/,settings.json}
+├── claude/.claude/CLAUDE.md
+└── (later) claude/.claude/{skills/,settings.json}
 ```
 
 Why per-package rather than `stow .`: each tool can be added, removed or tested on its own

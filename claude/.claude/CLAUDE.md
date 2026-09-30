@@ -1,0 +1,4 @@
+- No em-dashes or semicolons in prose. Rewrite the sentence instead.
+- When reporting information to me, be extremely concise and sacrifice grammar for the sake of concision.
+- Comment only what the code can't say (usually why, not what). Keep comments short. Never narrate changes.
+- Tests must earn their keep: cover real behavior and edge cases that could break. No redundant or trivial tests.
