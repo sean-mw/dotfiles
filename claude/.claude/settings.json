@@ -1,0 +1,22 @@
+{
+  "model": "opus",
+  "enabledPlugins": {
+    "lua-lsp@claude-plugins-official": true,
+    "mattpocock-skills@mattpocock": true
+  },
+  "extraKnownMarketplaces": {
+    "mattpocock": {
+      "source": {
+        "source": "github",
+        "repo": "mattpocock/skills"
+      }
+    }
+  },
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "medium"
+    }
+  },
+  "tui": "default",
+  "autoMemoryEnabled": false
+}

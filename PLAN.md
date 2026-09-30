@@ -20,8 +20,8 @@ dotfiles/
 ├── wezterm/.wezterm.lua
 ├── (later) bootstrap.sh
 ├── (later) claude/plugins
-├── claude/.claude/CLAUDE.md
-└── (later) claude/.claude/{skills/,settings.json}
+├── claude/.claude/{CLAUDE.md,settings.json}
+└── (later) claude/.claude/skills/
 ```
 
 Why per-package rather than `stow .`: each tool can be added, removed or tested on its own
@@ -68,9 +68,9 @@ Also fold in unmanaged startup files: `~/.zprofile` (brew shellenv), `~/.zshenv`
 - **Per-repo** conventions (issue tracker, test commands) belong in each project's own
   `CLAUDE.md` / `.claude/`, not in dotfiles.
 
-Caveat: Claude Code rewrites `~/.claude/settings.json` (e.g. `/model`). Symlink it and
-check that writes go through the link, or keep a tracked base file and treat local
-drift as expected. Decide when adding the `claude` package.
+Claude Code rewrites `~/.claude/settings.json` (e.g. `/model`, plugin installs).
+It is stowed as a symlink, and writes go through the link (tested 2026-09-30 by toggling
+a plugin), so changes show up as a git diff.
 
 ### Installing plugins on a new machine
 
