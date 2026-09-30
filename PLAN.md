@@ -17,6 +17,7 @@ dotfiles/
 ├── git/.config/git/ignore
 ├── tmux/.tmux.conf
 ├── nvim/.config/nvim/{init.lua,nvim-pack-lock.json}
+├── wezterm/.wezterm.lua
 ├── (later) bootstrap.sh
 ├── (later) claude/plugins
 └── (later) claude/.claude/{CLAUDE.md,skills/,settings.json}
@@ -42,9 +43,9 @@ Candidates from legacy, **not** carried over. Add each back only if missed:
 |----------------------------------|--------------------------------------------------------|
 | zinit + p10k + 3 zsh plugins     | Is a plain prompt fine? If not, try `starship` (one binary, no plugin manager) |
 | zoxide (`cd` override), eza      | Do I actually reach for them?                          |
-| tpm, catppuccin, vim-tmux-navigator | Core tmux config is back (no plugins). Miss the theme or seamless nvim pane nav? |
+| tpm, vim-tmux-navigator          | Core tmux config is back (no plugins). Miss seamless nvim pane nav? |
 | tmuxinator                       | Probably not                                           |
-| wezterm config                   | Needed for Shift+Enter in Claude Code? Font?           |
+| rest of wezterm config           | Theme is back (Catppuccin Mocha, built into wezterm, nvim; hex colors in tmux). Needed for Shift+Enter in Claude Code? Font? |
 | nvim: telescope, lsp/mason, cmp, treesitter, etc. | Add one at a time via `vim.pack` (no lazy.nvim). Update with `:lua vim.pack.update()`, commit the lockfile |
 | node, go (Brewfile)              | Manage with `mise` instead of brew?                    |
 
